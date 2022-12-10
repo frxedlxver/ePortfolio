@@ -5,7 +5,7 @@ html, body {
 }
 
 body {
-    background-image: url("../assets/index0.jpg");
+    background-image: url("../img/index0.jpg");
     background-repeat: none;
     background-size: 100 vh, 100 vw;
     justify-content: left;
@@ -18,7 +18,6 @@ nav {
     flex-direction: column;
     width: fit-content;
     height: 100vh;
-    
 }
 
 .icon {
@@ -32,16 +31,27 @@ nav {
     cursor: pointer;
 }
 
-.icon:hover {
-    background-color: rgba(0,0,0,0.2)
+.icon figcaption {
+  border: 1px;
+  padding: 5px;
+  border-color: transparent;
 }
 
-.icon:active {
-    background-color: rgba(0,0,0,0.5);
-    padding-right: 4px;
+.icon:active img{
+    transform: scale(0.98);
+    /* Scaling button to 0.98 to its original size */
+    box-shadow: inset 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    /* Lowering the shadow */
+    border-radius: 15px;
+}
+
+.icon:active figcaption {
+    /* Lowering the shadow */
+    border: 1px;
+    border-style: dashed;
+    border-color: gray;
 }
 
 .img-icon {
-    flex: 0 0;
-    padding: 20px;
+  padding-left: 10px;
 }
