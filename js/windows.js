@@ -23,7 +23,7 @@ $(".btn-win-close").click(function() {
     $(this).parent().hide()            
 })
 
-$(".window-header").click(function(){           
+$(".window-container").mousedown(function(){           
     resetWindows()
-    $(this).parent().addClass("selected-window")
+    $(this).addClass("selected-window")
 })
