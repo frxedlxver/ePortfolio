@@ -8,8 +8,9 @@
         <link href="./jquery/jquery-ui.min.css" rel="stylesheet">
         <link href="./css/windows.css" rel = "stylesheet">
         <link href="./css/desktop.css" rel = "stylesheet">
+
 </head>
-<body>
+<body onload="displayWelcome()">
 
         <nav>
                 <button class="icon" id="btn-contact">
@@ -22,8 +23,25 @@
                 </button>
         </nav>
 
+        <div id="win-welcome" class="window-container">
 
-        <div id="win-contact" class="window-container">
+                <button class="btn-win-close"> X </button>
+
+                <div class="window-header">
+                        W E L C O M E
+                </div>
+
+                <div class="window-body">
+                        Hey! Welcome to my e-portfolio. This place is still a
+                        work in progress, so watch your head!
+                </div>
+
+                <button class="btn-confirm"> O.K. </button>
+
+        </div>
+
+
+        <div id="win-contact" class="window-container resizable">
 
                 <button class="btn-win-close"> X </button>
 
@@ -37,7 +55,7 @@
 
         </div>
 
-        <div id="win-portfolio" class="window-container">
+        <div id="win-portfolio" class="window-container resizable">
 
                 <button class="btn-win-close">
                         X
@@ -55,6 +73,7 @@
 
         <script src="./jquery/jquery-3.6.1.min.js"></script>
         <script src="./jquery/jquery-ui.min.js"></script>
+        <script src="./jquery/jquery-ui.js"></script>
         <script src="./js/windows.js"></script>
 </body>
 </html>

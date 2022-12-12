@@ -5,13 +5,12 @@ html, body {
 }
 
 body {
-    background-image: url("../img/index0.jpg");
-    background-repeat: none;
-    background-size: 100 vh, 100 vw;
+    background-image: url("../img/index1.png");
+    background-repeat: both;
+    background-size: 30%;
     justify-content: left;
     align-items: left;
 }
-
 nav {
     display: flex;
     flex: 0 0;
