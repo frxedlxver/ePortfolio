@@ -10,43 +10,49 @@
         <link href="./css/desktop.css" rel = "stylesheet">
 
 </head>
+
 <body onload="displayWelcome()">
 
+
+
+        <!-- ICONS  ----------------------------------------------------------->
         <nav>
                 <button class="icon" id="btn-contact">
                         <img class="img-icon" src="./img/shortcut.png">
-                        <figcaption>Contact Me</figcaption>
+                        <figcaption> Contact Me </figcaption>
                 </button>
                 <button class="icon" id="btn-portfolio">
                         <img class="img-icon" src="./img/shortcut.png">
-                        <figcaption>Portfolio</figcaption>
+                        <figcaption> Portfolio </figcaption>
                 </button>
         </nav>
 
+
+
+        <!-- WINDOWS ---------------------------------------------------------->
+
+        <!-- WELCOME MESSAGE -->
         <div id="win-welcome" class="window-container">
 
-                <button class="btn-win-close"> X </button>
-
                 <div class="window-header">
-                        W E L C O M E
+                        <h4>W E L C O M E</h4>
+                        <button class="btn-win-close"> X </button>
                 </div>
 
                 <div class="window-body">
-                        Hey! Welcome to my e-portfolio. This place is still a
-                        work in progress, so watch your head!
+                        <p>Hey! Welcome to my e-portfolio. This place is still a
+                        work in progress, so watch your head!</p>
+                        <button class="btn-dialog btn-win-close"> OK! </button>
                 </div>
-
-                <button class="btn-confirm"> O.K. </button>
 
         </div>
 
-
+        <!-- CONTACT WINDOW -->
         <div id="win-contact" class="window-container resizable">
-
-                <button class="btn-win-close"> X </button>
 
                 <div class="window-header">
                         About Me
+                          <button class="btn-win-close"> X </button>
                 </div>
 
                 <div class="window-body">
@@ -55,14 +61,12 @@
 
         </div>
 
+        <!-- PORTFOLIO WINDOW -->
         <div id="win-portfolio" class="window-container resizable">
-
-                <button class="btn-win-close">
-                        X
-                </button>
 
                 <div class="window-header">
                         Portfolio
+                        <button class="btn-win-close"> X </button>
                 </div>
 
                 <div class="window-body">
@@ -71,6 +75,9 @@
 
         </div>
 
+
+
+        <!-- SCRIPTS ---------------------------------------------------------->
         <script src="./jquery/jquery-3.6.1.min.js"></script>
         <script src="./jquery/jquery-ui.min.js"></script>
         <script src="./jquery/jquery-ui.js"></script>

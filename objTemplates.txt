@@ -1,0 +1,45 @@
+
+
+NORMAL WINDOW ==================================================================
+
+<div id="win-welcome" class="window-container">
+
+        <div class="window-header">
+                <!--HEADER TEXT HERE -->
+                <button class="btn-win-close"> X </button>
+        </div>
+
+        <div class="window-body">
+            <!-- BODY TEXT HERE -->
+        </div>
+
+</div>
+
+
+
+
+MESSAGE WINDOW =================================================================
+
+<div id="win-welcome" class="window-container">
+
+        <div class="window-header">
+                <!--HEADER TEXT HERE -->
+                <button class="btn-win-close"> X </button>
+        </div>
+
+        <div class="window-body">
+            <!-- BODY TEXT HERE -->
+            <button class="btn-confirm"> Okay </button>
+        </div>
+
+</div>
+
+ICON ===========================================================================
+
+<button class="icon" id="btn-contact">
+
+        <img class="img-icon" src="IMAGE URL">
+
+        <figcaption> <!-- ICON NAME --> <figcaption>
+
+</button>

@@ -5,7 +5,9 @@ function resetWindows() {
 
 $( function() {
     $(".resizable").resizable({
-      handles: "n, e, s, w, ne, nw, se, sw"
+        handles: "n, e, s, w, ne, nw, se, sw",
+        minHeight: 70,
+        minWidth: 150
     });
 });
 
@@ -37,11 +39,7 @@ function displayWelcome() {
 };
 
 $(".btn-win-close").click(function() {
-    $(this).parent().hide()
-})
-
-$(".btn-confirm").click(function() {
-  $(this).parent().hide()
+    $(this).parent().parent().hide()
 })
 
 $(".window-container").mousedown(function(){
