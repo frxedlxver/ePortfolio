@@ -1,0 +1,36 @@
+/* https://api.jqueryui.com/theming/css-framework/
+
+/* Context menu */
+/*overriding jquery css */
+.ui-menu {
+     display: none;
+     position: absolute;
+     border: none;
+     border-radius: 3px;
+     width: 200px;
+     box-shadow: 6px 6px 2px 2px rgba(0, 0, 0, 0.24);
+     z-index: 100000;
+     background-color: #F3F4E1;
+}
+
+.ui-widget.ui-widget-content {
+    border: none;
+}
+
+.ui-menu-item-wrapper {
+    color: #002C38;
+    border: none;
+    border-radius: 3px;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    color: #002C38;
+    border: none;
+    background-color: #FFCF97;
+    overflow: hidden;
+    margin: 0px;
+}
+
+.ui-menu a, .ui-menu a:hover {
+    color: #002C38;
+}

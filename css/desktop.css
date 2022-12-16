@@ -3,15 +3,35 @@ html, body {
     height: 100vh;
     padding: 0;
     margin: 0;
+    overflow: hidden;
 }
 
-body {
+.desktop {
+    height: 100%;
+    width: 100%;
     background-image: url("../img/index1.png");
     background-repeat: both;
     background-size: 30%;
     justify-content: left;
     align-items: left;
 }
+
+.bg0 {
+    background-image: url("../img/index1.png");
+    background-repeat: both;
+    background-size: 30%;
+    justify-content: left;
+    align-items: left;
+}
+
+.bg1 {
+    background-image: url("../img/index2.png");
+    background-repeat: both;
+    background-size: 30%;
+    justify-content: left;
+    align-items: left;
+}
+
 nav {
     display: flex;
     flex: 0 0;
