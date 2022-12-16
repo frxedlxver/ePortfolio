@@ -8,7 +8,7 @@
         <link href="./jquery/jquery-ui.min.css" rel="stylesheet">
         <link href="./css/windows.css" rel = "stylesheet">
         <link href="./css/desktop.css" rel = "stylesheet">
-
+        <link href="./css/portfolio.css" rel="stylesheet">
 </head>
 
 <body onload="displayWelcome()">
@@ -17,14 +17,19 @@
 
         <!-- ICONS  ----------------------------------------------------------->
         <nav>
+                <button class="icon" id="btn-portfolio">
+                        <img class="img-icon" src="./img/icon-port.png">
+                        <figcaption> Riley's Portfolio </figcaption>
+                </button>
                 <button class="icon" id="btn-contact">
-                        <img class="img-icon" src="./img/shortcut.png">
+                        <img class="img-icon" src="./img/icon-contact.png">
                         <figcaption> Contact Me </figcaption>
                 </button>
-                <button class="icon" id="btn-portfolio">
-                        <img class="img-icon" src="./img/shortcut.png">
-                        <figcaption> Portfolio </figcaption>
-                </button>
+                <a class ="icon" id="git-link" href="https://github.com/frxedlxver">
+                        <img class="img-icon" src="./img/icon-git.png">
+                        <figcaption> Github </figcaption>
+        
+                </a>
         </nav>
 
 
@@ -40,42 +45,59 @@
                 </div>
 
                 <div class="window-body">
-                        <p>Hey! Welcome to my e-portfolio. This place is still a
-                        work in progress, so watch your head!</p>
+                        <p> Hey there, I'm Riley Hendrickson Pike, a second-year programming student in Halifax, NS. Thanks for dropping by!
+                        <br>This place is still a work-in-progress, but you can a look around using the desktop icons. </p>
                         <button class="btn-dialog btn-win-close"> OK! </button>
                 </div>
 
         </div>
 
-        <!-- CONTACT WINDOW -->
-        <div id="win-contact" class="window-container resizable">
+        <!-- PORTFOLIO WINDOW -->
+        <div id="win-portfolio" class="window-container">
 
                 <div class="window-header">
-                        About Me
-                          <button class="btn-win-close"> X </button>
+                        <h4>P O R T F O L I O</h4>
+                        <button class="btn-win-close"> X </button>
                 </div>
 
-                <div class="window-body">
-                        Body
+                <div class="window-body portfolio-content">
+
+                        <a class="portfolio-item" href="https://github.com/frxedlxver/javagame">
+                                <img class="portfolio-thumbnail" src="img\icon-git.png">
+                                <h4>Text-based game-engine</h5>
+                        </a>
+
+
+                        <hr>
+
+
+                        <a class="portfolio-item" href="https://github.com/frxedlxver/ePortfolio">
+                                <img class="portfolio-thumbnail" src="./img/icon-git.png">
+                                <h4>ePortfolio</h5>
+                        </a>
+
                 </div>
 
         </div>
 
-        <!-- PORTFOLIO WINDOW -->
-        <div id="win-portfolio" class="window-container resizable">
+        <!-- CONTACT WINDOW -->
+        <div id="win-contact" class="window-container">
 
                 <div class="window-header">
-                        Portfolio
+                        <h4>C O N T A C T</h4>
                         <button class="btn-win-close"> X </button>
                 </div>
 
                 <div class="window-body">
-                        Body
+                        <form method="POST" name="contact" data-netlify="true" class="formbox" id="contact-form">   
+                                <input id="name-field" class="name" name="Name" type="text" placeholder="your name" required>
+                                <input class="email" name="Email" placeholder="your e-mail" type="text" required>
+                                <textarea class="message" name="Message" placeholder="type your message here" rows="10" required></textarea>
+                                <button><input id="submit-button" type="submit" name="Submit" value="Submit"></button>
+                        </form>
                 </div>
 
         </div>
-
-
 
         <!-- SCRIPTS ---------------------------------------------------------->
         <script src="./jquery/jquery-3.6.1.min.js"></script>

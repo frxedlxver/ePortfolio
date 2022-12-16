@@ -3,17 +3,11 @@ function resetWindows() {
     $(".window-container").addClass("background-window")
 }
 
-$( function() {
-    $(".resizable").resizable({
-        handles: "n, e, s, w, ne, nw, se, sw",
-        minHeight: 70,
-        minWidth: 150
-    });
-});
-
 $(".window-container").draggable({
     handle: ".window-header"
 });
+
+$(".window-header").mousedown()
 
 
 $("#btn-contact").click(function() {

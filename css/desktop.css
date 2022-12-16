@@ -1,4 +1,5 @@
 html, body {
+    width: 100vw;
     height: 100vh;
     padding: 0;
     margin: 0;
@@ -18,9 +19,19 @@ nav {
     width: fit-content;
     height: 100vh;
 }
+a {
+    font-size: medium;
+    text-decoration: none;
+}
+
+hr {
+    background-color: #002C38;
+    width: 60%;
+}
 
 .icon {
     margin: 20px;
+    height: 10%;
     flex: 0 0;
     display: flex;
     flex-direction: column;
@@ -31,26 +42,26 @@ nav {
 }
 
 .icon figcaption {
+    font-size: medium;
   border: 1px;
   padding: 5px;
   border-color: transparent;
+  color: #FFCF97;
+
 }
 
-.icon:active img{
-    transform: scale(0.98);
-    /* Scaling button to 0.98 to its original size */
-    box-shadow: inset 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
-    /* Lowering the shadow */
+.icon:active {
+    transform: scale(0.98); 
+    box-shadow: inset 3px 2px 22px 1px #002C38;
     border-radius: 15px;
 }
 
 .icon:active figcaption {
-    /* Lowering the shadow */
     border: 1px;
     border-style: dashed;
-    border-color: gray;
+    border-color: #002C38;
 }
 
 .img-icon {
-  padding-left: 10px;
+height: 60%;
 }
