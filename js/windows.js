@@ -4,10 +4,10 @@ function resetWindows() {
 }
 
 $(".window-container").draggable({
-    handle: ".window-header"
+    handle: ".window-header",
+    containment: "#desktop",
+    scroll: false
 });
-
-$(".window-header").mousedown()
 
 
 $("#btn-contact").click(function() {

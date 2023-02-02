@@ -9,7 +9,7 @@ $(document).on('click',function(){
 });
 
 // disable right click and show custom context menu
-$(".desktop").on('contextmenu', function (e) {
+$("#desktop").on('contextmenu', function (e) {
 
         var id = this.id;
         $("#txt_id").val(id);
@@ -43,11 +43,13 @@ $('.context-menu li').on('click', function(){
 });
 
 function setBackgroundBlack() {
-    $(".desktop").removeClass("bg1")
-    $(".desktop").addClass("bg0")
+    document.getElementById('desktop').style.backgroundImage="url('./img/index0.png')";
 }
 
 function setBackgroundBlue() {
-    $(".desktop").removeClass("bg0")
-    $(".desktop").addClass("bg1")
+    document.getElementById('desktop').style.backgroundImage="url('./img/index1.png')";
+}
+
+function setBackgroundOrange() {
+    document.getElementById('desktop').style.backgroundImage="url('./img/index2.png')";
 }

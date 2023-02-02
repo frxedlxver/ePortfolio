@@ -14,13 +14,14 @@
 
 <body onload="displayWelcome()" oncontextmenu="return false">
 
-        <div class="desktop">
+        <div id="desktop">
 
                 <ul class="context-menu" id="desktop-menu">
                         <li><div>set background</div>
                                 <ul>
-                                        <li onclick="setBackgroundBlack()"><div>black (default)</div></li>
+                                        <li><div onclick="setBackgroundBlack()">black (default)</div></li>
                                         <li><div onclick="setBackgroundBlue()">blue</div></li>
+                                        <li><div onclick="setBackgroundOrange()">orange</div></li>
                                 </ul>
                         </li>
                         <li><div><a href="https://github.com/frxedlxver/ePortfolio">view source</a></div></li>
@@ -51,7 +52,7 @@
                 <!-- WINDOWS ---------------------------------------------------------->
 
                 <!-- WELCOME MESSAGE -->
-                <div id="win-welcome" class="window-container">
+                <div id="win-welcome" class="window-container draggable-item">
 
                         <div class="window-header">
                                 <h4>W E L C O M E</h4>
@@ -59,8 +60,8 @@
                         </div>
 
                         <div class="window-body">
-                                <p> Hey there, I'm Riley Hendrickson Pike, a second-year programming student in Halifax, NS. Thanks for dropping by!
-                                <br>This place is still a work-in-progress, but you can a look around using the desktop icons. </p>
+                                <p> Hey there. I'm Riley Hendrickson Pike, a second-year programming student in Halifax, NS. Thanks for dropping by.
+                                <br> Use the desktop icons to take a look around! </p>
                                 <button class="btn-dialog btn-win-close"> OK! </button>
                         </div>
 

@@ -49,6 +49,8 @@ html * {
   cursor:pointer;
 }
 
+
+
 .window-container button {
   background-color: #FFCF97;
   border-radius: 5px;
@@ -81,9 +83,6 @@ html * {
   border-right-color: #FF7868;
 }
 
-
-
-
 .window-container {
   display:flex;
   flex-direction: column;
@@ -107,6 +106,7 @@ html * {
   justify-content: left;
   position:relative;
 }
+
 
 
 .window-body *, .window-header * {

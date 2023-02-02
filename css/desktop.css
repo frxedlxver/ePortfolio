@@ -6,31 +6,18 @@ html, body {
     overflow: hidden;
 }
 
-.desktop {
+#desktop {
+    margin: 0;
+    padding: 0;
     height: 100%;
     width: 100%;
-    background-image: url("../img/index1.png");
+    background-image: url("../img/index0.png");
     background-repeat: both;
     background-size: 30%;
     justify-content: left;
     align-items: left;
 }
 
-.bg0 {
-    background-image: url("../img/index1.png");
-    background-repeat: both;
-    background-size: 30%;
-    justify-content: left;
-    align-items: left;
-}
-
-.bg1 {
-    background-image: url("../img/index2.png");
-    background-repeat: both;
-    background-size: 30%;
-    justify-content: left;
-    align-items: left;
-}
 
 nav {
     display: flex;
@@ -51,7 +38,8 @@ hr {
 
 .icon {
     margin: 20px;
-    height: 10%;
+    height: 108px;
+    width: 108px;
     flex: 0 0;
     display: flex;
     flex-direction: column;
