@@ -37,7 +37,9 @@ hr {
 }
 
 .icon {
-    margin: 20px;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 0px;
     height: 108px;
     width: 108px;
     flex: 0 0;
@@ -49,25 +51,22 @@ hr {
     cursor: pointer;
 }
 
-.icon figcaption {
-    font-size: medium;
-  border: 1px;
-  padding: 5px;
-  border-color: transparent;
-  color: #FFCF97;
-
-}
-
 .icon:active {
-    transform: scale(0.98); 
-    box-shadow: inset 3px 2px 22px 1px #002C38;
-    border-radius: 15px;
+    transition: all .05s ease-in-out; /* animate on click */
+    transform: scale(0.96);
 }
 
-.icon:active figcaption {
+.icon:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+.icon-caption {
+    font-size: medium;
     border: 1px;
-    border-style: dashed;
-    border-color: #002C38;
+    padding: 5px;
+    border-color: transparent;
+    color: #FFCF97;
 }
 
 .img-icon {

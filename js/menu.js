@@ -44,12 +44,30 @@ $('.context-menu li').on('click', function(){
 
 function setBackgroundBlack() {
     document.getElementById('desktop').style.backgroundImage="url('./img/index0.png')";
+    
+    var captions = document.getElementsByClassName('icon-caption');
+    for(var i = 0; i < captions.length; i++) {
+        captions[i].style.color = 'rgb(255, 207, 151)';
+        captions[i].style.fontWeight = 'normal';
+    }
 }
 
 function setBackgroundBlue() {
     document.getElementById('desktop').style.backgroundImage="url('./img/index1.png')";
+    
+    var captions = document.getElementsByClassName('icon-caption');
+    for(var i = 0; i < captions.length; i++) {
+        captions[i].style.color = 'rgb(255, 207, 151)';
+        captions[i].style.fontWeight = 'normal';
+    }
 }
 
 function setBackgroundOrange() {
     document.getElementById('desktop').style.backgroundImage="url('./img/index2.png')";
+    
+    var captions = document.getElementsByClassName('icon-caption');
+    for(var i = 0; i < captions.length; i++) {
+        captions[i].style.color = 'rgb(0, 44, 56)';
+        captions[i].style.fontWeight = 'bold';
+    }
 }

@@ -9,7 +9,6 @@ $(".window-container").draggable({
     scroll: false
 });
 
-
 $("#btn-contact").click(function() {
     $("#win-contact").show()
     resetWindows();
