@@ -7,9 +7,12 @@
 }
 
 .portfolio-item {
+    box-shadow: 3px 8px 0px 3px rgba(0,0,0,0.1), 0px 6px #FF7868;
+    background-color: rgb(237, 238, 227);
+    color: black;
     padding:0;
-    border: 1px solid black;
-    box-shadow: 3px 3px 0px 0px #FF7868;
+    margin-right: 2px;
+    margin-bottom: 5px;
     width: 100%;
     display: grid;
     grid-template-rows: 3;
@@ -20,8 +23,8 @@
 }
 
 .portfolio-item:active {
-    transform: scale(0.98); 
-    background-color: #FF7868;
+    animation:  moveButton 0.1s ease-in-out 0s 1 forwards,
+            moveButtonShadow 0.1s ease-in-out 0s 1 forwards;
 }
 
 .portfolio-item img {
@@ -38,4 +41,18 @@
 .portfolio-item p {
     grid-column: 2 / span 6;
     grid-row: 3;
+}
+
+/* animations */
+
+@keyframes moveButton {
+    100% { 
+        transform: translate(0px, 3px)
+    } 
+}
+
+@keyframes moveButtonShadow {
+    100% { 
+        box-shadow: 0px 0px #FF7868;
+    } 
 }
