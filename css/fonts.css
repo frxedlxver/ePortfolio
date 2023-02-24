@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'perfectDOS';
+    src: url('../fonts/perfect_dos_vga_437_win-webfont.woff2') format('woff2'),
+         url('../fonts/perfect_dos_vga_437_win-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pixelArial';
+    src: url('../fonts/pixearg_-webfont.woff2') format('woff2'),
+         url('../fonts/pixearg_-webfont.woff') format('woff');
+    font-weight: lighter;
+    font-style: normal;
+
+}
+
+/* default font */
+html * {
+    font-family: 'pixelArial';
+    font-size: small;
+}
+
+/* overrides */
+.icon-caption {
+    font-family: 'perfectDos';
+    letter-spacing: .1rem;
+}
+
+.window-header h4 {
+    font-weight: bold;
+    font-size: medium;
+}
+

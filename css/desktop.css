@@ -6,12 +6,20 @@ html, body {
     overflow: hidden;
 }
 
+html * {
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
+}
+
 #desktop {
     margin: 0;
     padding: 0;
     height: 100%;
     width: 100%;
-    background-image: url("../img/index0.png");
+    background-image: url("../img/index1.png");
     background-repeat: both;
     background-size: 30%;
     justify-content: left;
@@ -63,6 +71,7 @@ hr {
 
 .icon-caption {
     font-size: medium;
+    font-weight: normal;
     border: 1px;
     padding: 5px;
     border-color: transparent;
