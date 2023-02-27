@@ -18,17 +18,37 @@
 /* default font */
 html * {
     font-family: 'pixelArial';
-    font-size: small;
-}
-
-/* overrides */
-.icon-caption {
-    font-family: 'perfectDos';
-    letter-spacing: .1rem;
-}
-
-.window-header h4 {
-    font-weight: bold;
     font-size: medium;
 }
+
+/* ------------------ MOBILE ------------------ */
+@media only screen and (max-width: 768px) {
+    /* overrides */
+    .icon-caption {
+        font-size: medium;
+    }
+
+    .window-header h4 {
+        font-weight: bold;
+        font-size: large;
+        letter-spacing: .2rem;
+    }
+}
+
+
+/* ------------------ DESKTOP ------------------ */
+@media only screen and (min-width: 768px) {
+    /* overrides */
+    .icon-caption {
+        font-family: 'perfectDos';
+        letter-spacing: .1rem;
+    }
+
+    .window-header h4 {
+        font-weight: bold;
+        font-size: large;
+        letter-spacing: .2rem;
+    }
+}
+
 
