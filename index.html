@@ -13,10 +13,13 @@
         <link href="./css/fonts.css" rel="stylesheet">
 </head>
 
-<body onload="displayWelcome()" oncontextmenu="return false">
 
+<body onload="displayWelcome()" oncontextmenu="return false">
+        
         <div id="desktop">
 
+
+                <!-- CONTEXT MENU ----------------------------------------------------------->
                 <ul class="context-menu" id="desktop-menu">
                         <li><div>set theme</div>
                                 <ul>
@@ -29,6 +32,8 @@
                 </ul>
 
 
+                
+
 
 
                 <!-- ICONS  ----------------------------------------------------------->
@@ -37,18 +42,20 @@
                                 <img class="img-icon" src="./img/icon-port.png">
                                 <figcaption class="icon-caption"> PORTFOLIO </figcaption>
                         </button>
+
                         <a class="icon" id="btn-resume" href="./docs/resume_Riley_HP.pdf">
                                 <img class="img-icon" src="./img/icon-resume.png">
                                 <figcaption class="icon-caption"> RESUME </figcaption>
                         </a>
+
                         <button class="icon" id="btn-contact">
                                 <img class="img-icon" src="./img/icon-contact.png">
                                 <figcaption class="icon-caption"> CONTACT </figcaption>
                         </button>
+
                         <a class ="icon" id="git-link" href="https://github.com/frxedlxver">
                                 <img class="img-icon" src="./img/icon-git.png">
                                 <figcaption class="icon-caption"> GITHUB </figcaption>
-                
                         </a>
                 </nav>
 
@@ -56,23 +63,22 @@
 
                 <!-- WINDOWS ---------------------------------------------------------->
 
-                <!-- WELCOME MESSAGE -->
+                <!-- welcome -->
                 <div id="win-welcome" class="window-container draggable-item">
 
                         <div class="window-header">
                                 <h4>W E L C O M E</h4>
-                                <button class="btn-win-close"> X </button>
                         </div>
 
                         <div class="window-body">
                                 <p> Hey there. I'm Riley Hendrickson Pike, a second-year programming student in Halifax, NS. Thanks for dropping by.
                                 <br> Use the icons to take a look around, or try right-clicking the desktop. </p>
-                                <button class="btn-dialog btn-win-close"> OK! </button>
+                                <button id="btn-ok"> OK! </button>
                         </div>
 
                 </div>
 
-                <!-- PORTFOLIO WINDOW -->
+                <!-- portfolio -->
                 <div id="win-portfolio" class="window-container">
 
                         <div class="window-header">
@@ -127,7 +133,7 @@
 
                 </div>
 
-                <!-- CONTACT WINDOW -->
+                <!-- contact -->
                 <div id="win-contact" class="window-container">
 
                         <div class="window-header">
@@ -146,12 +152,12 @@
 
                 </div>
         </div> <!--end desktop div-->
-        <!-- SCRIPTS ---------------------------------------------------------->
+
         <script src="jquery-ui/jquery-ui.js"></script>
         <script src="jquery-ui/jquery-3.6.1.min.js"></script>
         <script src="jquery-ui/jquery-ui.min.js"></script>
-        
         <script src="js/windows.js"></script>
         <script src="js/menu.js"></script>
 </body>
+
 </html>
