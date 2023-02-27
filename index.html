@@ -6,17 +6,21 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="./jquery-ui/jquery-ui.min.css" rel="stylesheet">
+        <link href="./css/fonts.css" rel="stylesheet">
+        <link href="./css/scrollbar.css" rel="stylesheet">
         <link href="./css/windows.css" rel = "stylesheet">
         <link href="./css/desktop.css" rel = "stylesheet">
         <link href="./css/portfolio.css" rel="stylesheet">
         <link href="./css/menus.css" rel="stylesheet">
-        <link href="./css/fonts.css" rel="stylesheet">
 </head>
 
-<body onload="displayWelcome()" oncontextmenu="return false">
 
+<body onload="displayWelcome()" oncontextmenu="return false">
+        
         <div id="desktop">
 
+
+                <!-- CONTEXT MENU ----------------------------------------------------------->
                 <ul class="context-menu" id="desktop-menu">
                         <li><div>set theme</div>
                                 <ul>
@@ -29,6 +33,8 @@
                 </ul>
 
 
+                
+
 
 
                 <!-- ICONS  ----------------------------------------------------------->
@@ -37,18 +43,20 @@
                                 <img class="img-icon" src="./img/icon-port.png">
                                 <figcaption class="icon-caption"> PORTFOLIO </figcaption>
                         </button>
+
                         <a class="icon" id="btn-resume" href="./docs/resume_Riley_HP.pdf">
                                 <img class="img-icon" src="./img/icon-resume.png">
                                 <figcaption class="icon-caption"> RESUME </figcaption>
                         </a>
+
                         <button class="icon" id="btn-contact">
                                 <img class="img-icon" src="./img/icon-contact.png">
                                 <figcaption class="icon-caption"> CONTACT </figcaption>
                         </button>
+
                         <a class ="icon" id="git-link" href="https://github.com/frxedlxver">
                                 <img class="img-icon" src="./img/icon-git.png">
                                 <figcaption class="icon-caption"> GITHUB </figcaption>
-                
                         </a>
                 </nav>
 
@@ -56,23 +64,22 @@
 
                 <!-- WINDOWS ---------------------------------------------------------->
 
-                <!-- WELCOME MESSAGE -->
+                <!-- welcome -->
                 <div id="win-welcome" class="window-container draggable-item">
 
                         <div class="window-header">
                                 <h4>W E L C O M E</h4>
-                                <button class="btn-win-close"> X </button>
                         </div>
 
                         <div class="window-body">
                                 <p> Hey there. I'm Riley Hendrickson Pike, a second-year programming student in Halifax, NS. Thanks for dropping by.
                                 <br> Use the icons to take a look around, or try right-clicking the desktop. </p>
-                                <button class="btn-dialog btn-win-close"> OK! </button>
+                                <button id="btn-ok"> OK! </button>
                         </div>
 
                 </div>
 
-                <!-- PORTFOLIO WINDOW -->
+                <!-- portfolio -->
                 <div id="win-portfolio" class="window-container">
 
                         <div class="window-header">
@@ -114,20 +121,11 @@
                                         <h4>Android Quiz App</h5>
                                 </a>
 
-                                
-                                <hr>
-
-
-                                <a class="portfolio-item" href="https://soundsfrombelow.bandcamp.com">
-                                        <img class="portfolio-thumbnail" src="./img/icon-music.png">
-                                        <h4>Music</h5>
-                                </a>
-
                         </div>
 
                 </div>
 
-                <!-- CONTACT WINDOW -->
+                <!-- contact -->
                 <div id="win-contact" class="window-container">
 
                         <div class="window-header">
@@ -137,8 +135,8 @@
 
                         <div class="window-body">
                                 <form method="POST" name="contact" data-netlify="true" class="formbox" id="contact-form">   
-                                        <input id="name-field" class="name" name="Name" type="text" placeholder="your name" required>
-                                        <input class="email" name="Email" placeholder="your e-mail" type="text" required>
+                                        <input id="name-field" class="name" name="Name" type="text" placeholder="name" required>
+                                        <input class="email" name="Email" placeholder="e-mail" type="email" required>
                                         <textarea class="message" name="Message" placeholder="type your message here" rows="10" required></textarea>
                                         <button><input id="submit-button" type="submit" name="Submit" value="Submit"></button>
                                 </form>
@@ -146,12 +144,12 @@
 
                 </div>
         </div> <!--end desktop div-->
-        <!-- SCRIPTS ---------------------------------------------------------->
+
         <script src="jquery-ui/jquery-ui.js"></script>
         <script src="jquery-ui/jquery-3.6.1.min.js"></script>
         <script src="jquery-ui/jquery-ui.min.js"></script>
-        
         <script src="js/windows.js"></script>
         <script src="js/menu.js"></script>
 </body>
+
 </html>

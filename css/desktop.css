@@ -1,3 +1,4 @@
+
 html, body {
     width: 100vw;
     height: 100vh;
@@ -26,24 +27,6 @@ html * {
     align-items: left;
 }
 
-
-nav {
-    display: flex;
-    flex: 0 0;
-    flex-direction: column;
-    width: fit-content;
-    height: 100vh;
-}
-a {
-    font-size: medium;
-    text-decoration: none;
-}
-
-hr {
-    background-color: #002C38;
-    width: 60%;
-}
-
 .icon {
     border-radius: 5px;
     margin: 10px;
@@ -59,6 +42,14 @@ hr {
     cursor: pointer;
 }
 
+
+a {
+    font-size: medium;
+    text-decoration: none;
+}
+
+
+
 .icon:active {
     transition: all .05s ease-in-out; /* animate on click */
     transform: scale(0.96);
@@ -69,15 +60,61 @@ hr {
     border-radius: 5px;
 }
 
-.icon-caption {
-    font-size: medium;
-    font-weight: normal;
-    border: 1px;
-    padding: 5px;
-    border-color: transparent;
-    color: #FFCF97;
+/* ------------------ MOBILE ------------------ */
+
+@media only screen and (max-width: 768px) {
+    nav {
+        background: rgba(255, 255, 255, 0.2);
+        box-shadow: inset rgb(150, 150, 150) 0 3px 4px;
+        display: flex;
+        flex: 0 0;
+        flex-direction: row;
+        justify-content:space-evenly;
+        width: 100%;
+        height: fit-content;
+        position: fixed;
+        bottom: 0px;
+    }
+
+    .img-icon {
+        height: 80%;
+    }
+
+    .icon-caption {
+        font-size: medium;
+        font-weight: normal;
+        border: 1px;
+        padding: 0px;
+        border-color: transparent;
+        color: #FFCF97;
+        margin-bottom: 5%;
+    }
+        
 }
 
-.img-icon {
-height: 60%;
+/* ------------------ DESKTOP ------------------ */
+
+@media only screen and (min-width: 768px) {
+    nav {
+        display: flex;
+        flex: 0 0;
+        flex-direction: column;
+        width: fit-content;
+        height: 100vh;
+    }
+
+    .img-icon {
+        height: 60%;
+    }
+
+    .icon-caption {
+        font-size: medium;
+        font-weight: normal;
+        border: 1px;
+        padding: 5px;
+        border-color: transparent;
+        color: #FFCF97;
+    }
+        
 }
+
