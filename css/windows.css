@@ -150,8 +150,7 @@
     position: absolute;
     top: 25%;
     left: 35%;
-    min-width: 40%;
-    min-height: 40%;
+    width: fit-content;
   }
   
   #win-welcome {
@@ -215,25 +214,21 @@
     justify-content: center;
     z-index: 10;
     background-color: #F1F2DB;
-    border-radius: 5px;
-    box-shadow: 6px 6px 2px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 0.3em;
+    box-shadow: inset 3px 0px 3px 0px rgba(255, 255, 255, 0.9), 6px 6px 2px 2px rgba(0, 0, 0, 0.24);
   }
   
   .window-header {
     align-items: center;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-top-left-radius: 0.2em;
+    border-top-right-radius: 0.2em;
     background: #FFCF97;
     cursor: grab;
     display: flex;
     flex-flow: row 0;
     justify-content: left;
     position:relative;
-  }
-  
-  
-  .window-body *, .window-header * {
-    margin: 0.5em;
+    box-shadow: inset 2px 4px 3px 1px rgba(255,255,255,0.5), 0px 1px 6px 0px rgba(0,0,0,0.2);
   }
   
   .window-body {
@@ -242,6 +237,11 @@
     justify-content: left;
     align-items: top;
     min-height: max-content;
+  }
+
+    .window-body *, .window-header * {
+    margin: 0.5em;
+    margin-left: 0.6em;
   }
   
   .btn-win-close {
@@ -269,8 +269,11 @@
   }
   
   .background-window {
-    opacity: 0.9;
+    opacity: 0.8;
     z-index: 2;
+  }
+
+  .background-window::before {
   }
   
   @keyframes buttonClicked {

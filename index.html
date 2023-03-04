@@ -3,8 +3,10 @@
 
 <head>
         <title>Riley HP</title>
+		
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+		
         <link href="./jquery-ui/jquery-ui.min.css" rel="stylesheet">
         <link href="./css/fonts.css" rel="stylesheet">
         <link href="./css/scrollbar.css" rel="stylesheet">
@@ -19,8 +21,8 @@
         
         <div id="desktop">
 
-
                 <!-- CONTEXT MENU ----------------------------------------------------------->
+				
                 <ul class="context-menu" id="desktop-menu">
                         <li><div>set theme</div>
                                 <ul>
@@ -38,13 +40,14 @@
 
 
                 <!-- ICONS  ----------------------------------------------------------->
+				
                 <nav>
                         <button class="icon" id="btn-portfolio">
                                 <img class="img-icon" src="./img/icon-port.png">
                                 <figcaption class="icon-caption"> PORTFOLIO </figcaption>
                         </button>
 
-                        <a class="icon" id="btn-resume" href="./docs/resume_Riley_HP.pdf">
+                        <a class="icon" id="btn-resume" href="./docs/resume_Riley_HP.pdf" target="_blank">
                                 <img class="img-icon" src="./img/icon-resume.png">
                                 <figcaption class="icon-caption"> RESUME </figcaption>
                         </a>
@@ -54,7 +57,7 @@
                                 <figcaption class="icon-caption"> CONTACT </figcaption>
                         </button>
 
-                        <a class ="icon" id="git-link" href="https://github.com/frxedlxver">
+                        <a class ="icon" id="git-link" href="https://github.com/frxedlxver"target="_blank">
                                 <img class="img-icon" src="./img/icon-git.png">
                                 <figcaption class="icon-caption"> GITHUB </figcaption>
                         </a>
@@ -62,7 +65,10 @@
 
 
 
+
+
                 <!-- WINDOWS ---------------------------------------------------------->
+
 
                 <!-- welcome -->
                 <div id="win-welcome" class="window-container draggable-item">
@@ -75,9 +81,10 @@
                                 <p> Hey there. I'm Riley Hendrickson Pike, a second-year programming student in Halifax, NS. Thanks for dropping by.
                                 <br> Use the icons to take a look around, or try right-clicking the desktop. </p>
                                 <button id="btn-ok"> OK! </button>
-                        </div>
+                        </div><!-- end welcome window body -->
 
-                </div>
+                </div><!-- end welcome window container-->
+
 
                 <!-- portfolio -->
                 <div id="win-portfolio" class="window-container">
@@ -89,41 +96,34 @@
 
                         <div class="window-body portfolio-content">
 
-                                <a class="portfolio-item" href="https://github.com/frxedlxver/javagame">
+                                <a class="portfolio-item" href="https://github.com/frxedlxver/javagame" target="_blank">
                                         <img class="portfolio-thumbnail" src="img\icon-git.png">
                                         <h4>Text-based game-engine (Java)</h5>
                                 </a>
-
-
                                 <hr>
 
 
-                                <a class="portfolio-item" href="https://github.com/frxedlxver/ePortfolio">
+                                <a class="portfolio-item" href="https://github.com/frxedlxver/ePortfolio" target="_blank">
                                         <img class="portfolio-thumbnail" src="./img/icon-git.png">
                                         <h4>ePortfolio source</h5>
                                 </a>
-
-                                
                                 <hr>
 
-
-                                <a class="portfolio-item" href="https://github.com/frxedlxver/CalculatorApp">
+                                <a class="portfolio-item" href="https://github.com/frxedlxver/CalculatorApp" target="_blank">
                                         <img class="portfolio-thumbnail" src="./img/icon-git.png">
                                         <h4>Android Calculator App</h5>
                                 </a>
-
-                                
                                 <hr>
 
 
-                                <a class="portfolio-item" href="https://github.com/frxedlxver/quiz-app">
+                                <a class="portfolio-item" href="https://github.com/frxedlxver/quiz-app" target="_blank">
                                         <img class="portfolio-thumbnail" src="./img/icon-git.png">
                                         <h4>Android Quiz App</h5>
                                 </a>
 
-                        </div>
-
-                </div>
+                        </div> <!-- end portfolio window-body-->
+                </div><!-- end window-container>
+				
 
                 <!-- contact -->
                 <div id="win-contact" class="window-container">
@@ -140,9 +140,9 @@
                                         <textarea class="message" name="Message" placeholder="type your message here" rows="10" required></textarea>
                                         <button><input id="submit-button" type="submit" name="Submit" value="Submit"></button>
                                 </form>
-                        </div>
-
-                </div>
+                        </div><!-- end contact window body -->
+                </div><!-- end window-container-->
+				
         </div> <!--end desktop div-->
 
         <script src="jquery-ui/jquery-ui.js"></script>
