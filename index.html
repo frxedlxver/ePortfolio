@@ -8,34 +8,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		
         <link href="./jquery-ui/jquery-ui.min.css" rel="stylesheet">
-        <link href="./css/fonts.css" rel="stylesheet">
+        
         <link href="./css/scrollbar.css" rel="stylesheet">
         <link href="./css/windows.css" rel = "stylesheet">
         <link href="./css/desktop.css" rel = "stylesheet">
         <link href="./css/portfolio.css" rel="stylesheet">
+		
         <link href="./css/menus.css" rel="stylesheet">
+		<link href="./css/fonts.css" rel="stylesheet">
 </head>
 
 
 <body onload="displayWelcome()" oncontextmenu="return false">
         
-        <div id="desktop">
-
-                <!-- CONTEXT MENU ----------------------------------------------------------->
-				
-                <ul class="context-menu" id="desktop-menu">
-                        <li><div>set theme</div>
-                                <ul>
-                                        <li><div onclick="setBackgroundBlue()">cozy night (default)</div></li>
-                                        <li><div onclick="setBackgroundBlack()">the big spooky (dark)</div></li>
-                                        <li><div onclick="setBackgroundLight()">arctic dawn (light)</div></li>
-                                </ul>
-                        </li>
-                        <li><div><a href="https://github.com/frxedlxver/ePortfolio">view source</a></div></li>
-                </ul>
-
-
-                
+        <div id="desktop">              
 
 
 
@@ -144,6 +130,19 @@
                 </div><!-- end window-container-->
 				
         </div> <!--end desktop div-->
+		
+		<!-- CONTEXT MENU ----------------------------------------------------------->
+		
+		<ul class="context-menu" id="desktop-menu">
+				<li><div>set theme</div>
+						<ul>
+								<li><div onclick="setBackgroundBlue()">cozy night (default)</div></li>
+								<li><div onclick="setBackgroundBlack()">the big spooky (dark)</div></li>
+								<li><div onclick="setBackgroundLight()">arctic dawn (light)</div></li>
+						</ul>
+				</li>
+				<li><div><a href="https://github.com/frxedlxver/ePortfolio">view source</a></div></li>
+		</ul>
 
         <script src="jquery-ui/jquery-ui.js"></script>
         <script src="jquery-ui/jquery-3.6.1.min.js"></script>
