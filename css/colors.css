@@ -1,0 +1,32 @@
+/* ------------------ COLORS ------------------ */
+
+:root {
+  --dark: #1B1233;
+  --midDark: #342E41;
+  --mid: #4C4A4E;
+  --midLight: #949E76;
+  --midLightTranslucent: #949e761f;
+  --highlight: #b3b8a6;
+  --mobileNavBackground: rgba(255, 255, 255, 0.09);
+}
+
+/* ------------------ ALL ------------------ */
+
+
+
+/* ------------------ MOBILE ------------------ */
+@media only screen and (max-width: 768px) {
+    nav {
+        /* From https://css.glass */
+    background: var(--mobileNavBackground);
+    border-radius: 1em 1em 0 0;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .icon-caption {
+        color: var(--highlight);
+    }
+}

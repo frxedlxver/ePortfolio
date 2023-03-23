@@ -14,7 +14,6 @@
         margin: 0;
         padding: 0;
         display: grid;
-        grid-template-rows: 3;
     }
     
     .portfolio-item:hover {
@@ -22,8 +21,7 @@
     }
     
     .portfolio-item:active {
-        animation:  moveButton 0.1s ease-in-out 0s 1 forwards,
-                moveButtonShadow 0.1s ease-in-out 0s 1 forwards;
+        animation:  buttonPortfolioClicked 150ms ease-in-out 0s 2;
     }
     
     .portfolio-item img {
@@ -40,20 +38,6 @@
     .portfolio-item p {
         grid-column: 2 / span 6;
         grid-row: 3;
-    }
-    
-    /* animations */
-    
-    @keyframes moveButton {
-        100% { 
-            transform: translate(0px, 3px)
-        } 
-    }
-    
-    @keyframes moveButtonShadow {
-        100% { 
-            box-shadow: inset 0px 10px 5px 0px rgba(0,0,0,0.2);
-        } 
     }
 }
 
@@ -76,7 +60,6 @@
         margin-bottom: 5px;
         width: 100%;
         display: grid;
-        grid-template-rows: 3;
     }
     
     .portfolio-item:hover {

@@ -23,10 +23,6 @@ html * {
 
 /* ------------------ MOBILE ------------------ */
 @media only screen and (max-width: 768px) {
-    /* overrides */
-    .icon-caption {
-        font-size: medium;
-    }
 
     .window-header h4 {
         font-weight: bold;
@@ -50,5 +46,6 @@ html * {
         letter-spacing: .2rem;
     }
 }
+
 
 

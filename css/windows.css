@@ -1,289 +1,299 @@
 /* ------------------ MOBILE ------------------ */
 @media only screen and (max-width: 768px) {
-  
-  #contact-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    
-  }
-  
-  #contact-form > input, #contact-form > textarea {
-    background-color: #fffbf5;
-    width: 100%;
-    resize: none;
-    overflow-y: scroll;
-    overflow-x: hidden;
-  }
 
-  hr {
-    display: none;
-  }
-   
-  #submit-button {
-    background-color: transparent;
-    border: none;
-    font-size: medium;
-    cursor:pointer;
-  }
-  
-  .window-container button {
-    background-color: #FFCF97;
-    border-radius: 5px;
-    border-top-color: #F3F4E1;
-    border-left-color: #F3F4E1;
-    border-bottom-color: #FF7868;
-    border-right-color: #FF7868;
-    min-height: fit-content;
-  }
-  
-  .window-container button:hover {
-    background-color: #F8B5A2;
-  
-  }
-  
-  .window-container button:active {
-    animation: buttonClicked 0.1s linear 0s 1 forwards;
-  }
-  
-  .window-container {
-    display:flex;
-    flex-direction: column;
-
-    position: absolute;
-    bottom: 0px;
-
-    height: 100%;
-    width: 100%;
-    
-    align-content: center;
-    justify-content: center;
-
-    background-color: #f1f2dbcb;
-  }
-  
-  .window-header {
-    align-items: center;
-
-    display: flex;
-    flex-flow: row 0;
-    justify-content: left;
-
-    position:fixed;
-    top:0px;
-
-    width: 100%;
-    height: 10%;
-
-    background-color: #ffce97;
-  }
-  
-  
-  .window-body *, .window-header * {
-    margin: 0.5em;
-  }
-  
-  .window-body {
-    display: flex;
-
-    flex-direction: column;
-    justify-content: left;
-    align-items: center;
-
-    overflow-y: scroll;
-
-    background-color: #f1f2db;
-    border-radius: 5px;
-    margin:5%;
-    padding: 3%;
-  }
-
-  .btn-win-close {
-    font-size: large;
-    font-weight: bold;
-    size:fit-content;
-    width: 10%;
-    z-index: 2;
-    margin-left: auto;
-  }
-  
-  .btn-dialog {
-    font-weight: normal;
-    font-size: medium;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin: 10%;
-  }
-  
-  @keyframes buttonClicked {
-    100% {
-      background-color: #FF7868;
-      border-top-color: #F8B5A2;
-      border-left-color: #F8B5A2;
-      border-bottom-color: #F3F4E1;
-      border-right-color: #F3F4E1;
+    #contact-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
     }
-  } 
+  
+    #contact-form > input, #contact-form > textarea {
+        background-color: white;
+        width: 100%;
+        resize: none;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    hr {
+        display: none;
+    }
+   
+    #submit-button {
+        background-color: transparent;
+        border: none;
+        font-size: medium;
+        cursor:pointer;
+    }
+  
+    .window-container button {
+        background-color: #FFCF97;
+        min-height: fit-content;
+    }
+  
+    .window-container button:hover {
+        background-color: #F8B5A2;
+  
+    }
+  
+    .window-container button:active {
+        animation: buttonWindowClicked 150ms linear 0s 2 alternate;
+    }
+  
+    .window-container {
+        display:flex;
+        flex-direction: column;
+
+        position: absolute;
+        bottom: 0px;
+
+        height: 100%;
+        width: 100%;
+    
+        align-content: center;
+        justify-content: center;
+
+        background-color: #f1f2dbcb;
+    }
+  
+  
+    .window-body *, .window-header * {
+        margin: 0.5em;
+    }
+  
+    .window-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: center;
+        overflow-y: scroll;
+        background-color: #f1f2db;
+        border-radius: 5px;
+        margin:5%;
+        padding: 3%;
+        scrollbar-width: none;
+    }
+
+    .window-header {
+        align-items: center;
+        display: flex;
+        flex-flow: row;
+        justify-content: left;
+        position:fixed;
+        top:0px;
+        width: 100%;
+        height: 10%;
+        background-color: #ffce97;
+    }
+
+    .btn-x {
+        font-size: large;
+        font-weight: bold;
+        height: 100%;
+        width: 15%;
+        margin-right: 0;
+        z-index: 2;
+        margin-left: auto;
+        border: none;
+    }
+  
+    #btn-ok {
+        border-radius: 5px;
+        border-top-color: #F3F4E1;
+        border-left-color: #F3F4E1;
+        border-bottom-color: #FF7868;
+        border-right-color: #FF7868;
+        font-weight: normal;
+        font-size: medium;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 3em;
+        margin-top: 10%;
+    }
+
+      /* animations */
+  
+    @keyframes buttonWindowClicked {
+        100% {
+            background-color: #FF7868;
+            border-top-color: #F8B5A2;
+            border-left-color: #F8B5A2;
+            border-bottom-color: #F3F4E1;
+            border-right-color: #F3F4E1;
+        }
+    } 
+
+    @keyframes buttonPortfolioClicked {
+        100% { 
+            transform: translate(0px, 3px);
+            box-shadow: inset 0px 10px 5px 0px rgba(0,0,0,0.2);
+        } 
+    }
 }
 
 /* ------------------ DESKTOP ------------------ */
 
 @media only screen and (min-width: 768px) {
-  #win-contact {
-    display: none;
-    position: absolute;
-    top: 20%;
-    left: 30%;
-    min-width: 40%;
-    min-height: 40%;
-  }
-  
-  #win-portfolio {
-    display: none;
-    position: absolute;
-    top: 25%;
-    left: 35%;
-    width: fit-content;
-  }
-  
-  #win-welcome {
-    display: flex;
-    position: absolute;
-    top: 30%;
-    left: 30%;
-  }
-  
-  #contact-form {
-    display: grid;
-  }
-  
-  #contact-form > input, #contact-form > textarea {
-    border: 1px solid #002C38;
-    border-radius: 2px;
-    background-color: white;
-    resize: none;
-    overflow-y: scroll;
-    overflow-x: hidden;
-  }
 
-  hr {
-    background-color: #002C38;
-    width: 60%;
-  } 
-  
-  
-  #submit-button {
-    background-color: transparent;
-    border: none;
-    font-size: medium;
-    cursor:pointer;
-  }
-  
-  
-  
-  .window-container button {
-    background-color: #FFCF97;
-    border-radius: 5px;
-    border-top-color: #F3F4E1;
-    border-left-color: #F3F4E1;
-    border-bottom-color: #FF7868;
-    border-right-color: #FF7868;
-    min-height: fit-content;
-  }
-  
-  .window-container button:hover {
-    background-color: #F8B5A2;
-  
-  }
-  
-  .window-container button:active {
-    animation: buttonClicked 0.1s linear 0s 1 forwards;
-  }
-  
-  .window-container {
-    display:flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    z-index: 10;
-    background-color: #F1F2DB;
-    border-radius: 0.3em;
-    box-shadow: inset 3px 0px 3px 0px rgba(255, 255, 255, 0.9), 6px 6px 2px 2px rgba(0, 0, 0, 0.24);
-  }
-  
-  .window-header {
-    align-items: center;
-    border-top-left-radius: 0.2em;
-    border-top-right-radius: 0.2em;
-    background: #FFCF97;
-    cursor: grab;
-    display: flex;
-    flex-flow: row 0;
-    justify-content: left;
-    position:relative;
-    box-shadow: inset 2px 4px 3px 1px rgba(255,255,255,0.5), 0px 1px 6px 0px rgba(0,0,0,0.2);
-  }
-  
-  .window-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: top;
-    min-height: max-content;
-  }
+    /* rules for where windows should appear on screen. creates a cascading effect. */
+    #win-contact {
+        display: none;
+        position: absolute;
+        top: 20%;
+        left: 30%;
+        min-width: 40%;
+        min-height: 40%;
+    }
+
+    #win-portfolio {
+        display: none;
+        position: absolute;
+        top: 25%;
+        left: 35%;
+        width: fit-content;
+    }
+
+    #win-welcome {
+        display: flex;
+        position: absolute;
+        top: 30%;
+        left: 30%;
+    }
+
+
+
+    /* holds header and body */
+    .window-container {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        z-index: 10;
+        background-color: #F1F2DB;
+        border-radius: 0.3em;
+        box-shadow: inset 3px 0px 3px 0px rgba(255, 255, 255, 0.9), 6px 6px 2px 2px rgba(0, 0, 0, 0.24);
+    }
+
+    .window-header {
+        align-items: center;
+        border-top-left-radius: 0.2em;
+        border-top-right-radius: 0.2em;
+        background: #FFCF97;
+        cursor: grab;
+        display: flex;
+        flex-flow: row;
+        justify-content: left;
+        position: relative;
+        box-shadow: inset 2px 4px 3px 1px rgba(255,255,255,0.5), 0px 1px 6px 0px rgba(0,0,0,0.2);
+    }
+
+    /* holds window content */
+    .window-body {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        min-height: fit-content;
+        padding: 0.5em;
+        padding-left: 0.6em;
+        scrollbar-width: none;
+    }
 
     .window-body *, .window-header * {
-    margin: 0.5em;
-    margin-left: 0.6em;
-  }
-  
-  .btn-win-close {
-    font-size: x-small;
-    font-weight: bold;
-    height: 2em;
-    margin-left: auto;
-    z-index: 2;
-    cursor: pointer;
-  }
-  
-  .btn-dialog, #btn-ok {
-    font-weight: normal;
-    font-size: medium;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 10%;
-    margin-left: auto;
-  }
-  
-  .selected-window {
-    z-index: 100;
-  }
-  
-  .background-window {
-    opacity: 0.8;
-    z-index: 2;
-  }
-
-  .background-window::before {
-  }
-  
-  @keyframes buttonClicked {
-    100% {
-      background-color: #FF7868;
-      border-top-color: #F8B5A2;
-      border-left-color: #F8B5A2;
-      border-bottom-color: #F3F4E1;
-      border-right-color: #F3F4E1;
+        margin: 0.5em;
+        margin-left: 0.6em;
     }
-  }
+  
+    /* x button in corner of window */
+    .btn-x {
+        font-size: x-small;
+        font-weight: bold;
+        height: 2em;
+        margin-left: auto;
+        z-index: 2;
+        cursor: pointer;
+    }
+  
+    /* buttons that appear within a window */
+    .btn-dialog, .btn-ok {
+        font-weight: normal;
+        font-size: medium;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 10em;
+        align-self: center;
+    }
+  
+    /* stylings to distinguish active and background windows */
+    .selected-window {
+        z-index: 100;
+    }
+  
+    .background-window {
+        opacity: 0.8;
+        z-index: 2;
+    }
+
+    /* styling for all buttons except portfolio links*/
+    .window-container button {
+        background-color: #FFCF97;
+        border-radius: 5px;
+        border-top-color: #F3F4E1;
+        border-left-color: #F3F4E1;
+        border-bottom-color: #FF7868;
+        border-right-color: #FF7868;
+        min-height: fit-content;
+    }
+
+    .window-container button:hover {
+        background-color: #F8B5A2;
+    }
+
+    .window-container button:active {
+        animation: buttonClicked 0.1s linear 0s 1 forwards;
+    }
+
+    /* contact page styling */
+    #contact-form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-self: center;
+    }
+
+    #contact-form > input, #contact-form > textarea {
+        border: 1px solid #002C38;
+        border-radius: 2px;
+        background-color: white;
+        resize: none;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    /* this is an element for form functionality with netlify only. it goes within a dialog button */
+    #submit-field {
+        background-color: transparent;
+        border: none;
+        font-size: medium;
+        cursor: pointer;
+    }
+  
+      @keyframes buttonClicked {
+            100% {
+                  background-color: #FF7868;
+                  border-top-color: #F8B5A2;
+                  border-left-color: #F8B5A2;
+                  border-bottom-color: #F3F4E1;
+                  border-right-color: #F3F4E1;
+            }
+      }
   
 }

@@ -9,146 +9,154 @@
 		
         <link href="./jquery-ui/jquery-ui.min.css" rel="stylesheet">
         
-        <link href="./css/scrollbar.css" rel="stylesheet">
+
         <link href="./css/windows.css" rel = "stylesheet">
         <link href="./css/desktop.css" rel = "stylesheet">
-        <link href="./css/portfolio.css" rel="stylesheet">
-		
+        <link href="./css/portfolio.css" rel="stylesheet">                                                                                         
         <link href="./css/menus.css" rel="stylesheet">
-		<link href="./css/fonts.css" rel="stylesheet">
+        <link href="./css/fonts.css" rel="stylesheet">
 </head>
 
 
 <body onload="displayWelcome()" oncontextmenu="return false">
-        
-        <div id="desktop">              
+
+    <div id="desktop">
+
+        <!-- ICONS  ----------------------------------------------------------->
+
+        <nav>
+            <div class="icon-wrapper">
+                <button class="icon" id="btn-portfolio">
+                    <img class="img-icon" src="./img/icon-port.png">
+                    <figcaption class="icon-caption"> portfolio </figcaption>
+                </button>
+            </div>
+
+            <div class="icon-wrapper">
+                <a class="icon" id="btn-resume" href="./docs/resume_Riley_HP.pdf" target="_blank">
+                    <img class="img-icon" src="./img/icon-resume.png">
+                    <figcaption class="icon-caption"> resume </figcaption>
+                </a>
+            </div>
+
+            <div class="icon-wrapper">
+                <button class="icon" id="btn-contact">
+                    <img class="img-icon" src="./img/icon-contact.png">
+                    <figcaption class="icon-caption"> contact </figcaption>
+                </button>
+            </div>
+
+            <div class="icon-wrapper">
+                <a class="icon" id="git-link" href="https://github.com/frxedlxver" target="_blank">
+                    <img class="img-icon" src="./img/icon-git.png">
+                    <figcaption class="icon-caption"> github </figcaption>
+                </a>
+            </div>
+        </nav>
 
 
 
-                <!-- ICONS  ----------------------------------------------------------->
-				
-                <nav>
-                        <button class="icon" id="btn-portfolio">
-                                <img class="img-icon" src="./img/icon-port.png">
-                                <figcaption class="icon-caption"> portfolio </figcaption>
-                        </button>
-
-                        <a class="icon" id="btn-resume" href="./docs/resume_Riley_HP.pdf" target="_blank">
-                                <img class="img-icon" src="./img/icon-resume.png">
-                                <figcaption class="icon-caption"> resume </figcaption>
-                        </a>
-
-                        <button class="icon" id="btn-contact">
-                                <img class="img-icon" src="./img/icon-contact.png">
-                                <figcaption class="icon-caption"> contact </figcaption>
-                        </button>
-
-                        <a class ="icon" id="git-link" href="https://github.com/frxedlxver"target="_blank">
-                                <img class="img-icon" src="./img/icon-git.png">
-                                <figcaption class="icon-caption"> github </figcaption>
-                        </a>
-                </nav>
 
 
+        <!-- WINDOWS ---------------------------------------------------------->
+        <!-- welcome -->
+        <div id="win-welcome" class="window-container draggable-item">
+
+            <div class="window-header">
+                <h4>w e l c o m e !</h4>
+            </div>
+
+            <div class="window-body">
+                <p>
+                    Hey there. I'm Riley Hendrickson Pike, a second-year programming student in Halifax, NS. Thanks for dropping by.
+                    <br> Use the icons to take a look around, or try right-clicking the desktop.
+                </p>
+                <button class="btn-dialog btn-win-close"> OK! </button>
+            </div>
+
+        </div>
 
 
+        <!-- portfolio -->
+        <div id="win-portfolio" class="window-container">
 
-                <!-- WINDOWS ---------------------------------------------------------->
+            <div class="window-header">
+                <h4>p o r t f o l i o</h4>
+                <button class="btn-x btn-win-close"> X </button>
+            </div>
 
+            <div class="window-body portfolio-content">
 
-                <!-- welcome -->
-                <div id="win-welcome" class="window-container draggable-item">
-
-                        <div class="window-header">
-                                <h4>W E L C O M E</h4>
-                        </div>
-
-                        <div class="window-body">
-                                <p> Hey there. I'm Riley Hendrickson Pike, a second-year programming student in Halifax, NS. Thanks for dropping by.
-                                <br> Use the icons to take a look around, or try right-clicking the desktop. </p>
-                                <button id="btn-ok"> OK! </button>
-                        </div><!-- end welcome window body -->
-
-                </div><!-- end welcome window container-->
+                <a class="portfolio-item" href="https://github.com/frxedlxver/javagame" target="_blank">
+                    <img class="portfolio-thumbnail" src="img\icon-git.png">
+                    <h4>Text-based game-engine (Java)</h5>
+                </a>
+                <hr>
 
 
-                <!-- portfolio -->
-                <div id="win-portfolio" class="window-container">
+                <a class="portfolio-item" href="https://github.com/frxedlxver/ePortfolio" target="_blank">
+                    <img class="portfolio-thumbnail" src="./img/icon-git.png">
+                    <h4>ePortfolio source</h5>
+                </a>
+                <hr>
 
-                        <div class="window-header">
-                                <h4>P O R T F O L I O</h4>
-                                <button class="btn-win-close"> X </button>
-                        </div>
-
-                        <div class="window-body portfolio-content">
-
-                                <a class="portfolio-item" href="https://github.com/frxedlxver/javagame" target="_blank">
-                                        <img class="portfolio-thumbnail" src="img\icon-git.png">
-                                        <h4>Text-based game-engine (Java)</h5>
-                                </a>
-                                <hr>
+                <a class="portfolio-item" href="https://github.com/frxedlxver/CalculatorApp" target="_blank">
+                    <img class="portfolio-thumbnail" src="./img/icon-git.png">
+                    <h4>Android Calculator App</h5>
+                </a>
+                <hr>
 
 
-                                <a class="portfolio-item" href="https://github.com/frxedlxver/ePortfolio" target="_blank">
-                                        <img class="portfolio-thumbnail" src="./img/icon-git.png">
-                                        <h4>ePortfolio source</h5>
-                                </a>
-                                <hr>
+                <a class="portfolio-item" href="https://github.com/frxedlxver/quiz-app" target="_blank">
+                    <img class="portfolio-thumbnail" src="./img/icon-git.png">
+                    <h4>Android Quiz App</h5>
+                </a>
 
-                                <a class="portfolio-item" href="https://github.com/frxedlxver/CalculatorApp" target="_blank">
-                                        <img class="portfolio-thumbnail" src="./img/icon-git.png">
-                                        <h4>Android Calculator App</h5>
-                                </a>
-                                <hr>
+            </div>
+        </div>
 
 
-                                <a class="portfolio-item" href="https://github.com/frxedlxver/quiz-app" target="_blank">
-                                        <img class="portfolio-thumbnail" src="./img/icon-git.png">
-                                        <h4>Android Quiz App</h5>
-                                </a>
+        <!-- contact -->
+        <div id="win-contact" class="window-container">
 
-                        </div> <!-- end portfolio window-body-->
-                </div><!-- end window-container>
-				
+            <div class="window-header">
+                <h4>c o n t a c t</h4>
+                <button class="btn-x btn-win-close"> X </button>
+            </div>
 
-                <!-- contact -->
-                <div id="win-contact" class="window-container">
+            <div class="window-body">
+                <form method="POST" name="contact" data-netlify="true" class="formbox" id="contact-form">
+                    <input id="name-field" class="name" name="Name" type="text" placeholder="name" required>
+                    <input class="email" name="Email" placeholder="e-mail" type="email" required>
+                    <textarea class="message" name="Message" placeholder="type your message here" rows="10" required></textarea>
+                    <button class="btn-dialog"><input id="submit-field" type="submit" name="Submit" value="Submit"></button>
+                </form>
+            </div>
+        </div>
 
-                        <div class="window-header">
-                                <h4>C O N T A C T</h4>
-                                <button class="btn-win-close"> X </button>
-                        </div>
+    </div>
 
-                        <div class="window-body">
-                                <form method="POST" name="contact" data-netlify="true" class="formbox" id="contact-form">   
-                                        <input id="name-field" class="name" name="Name" type="text" placeholder="name" required>
-                                        <input class="email" name="Email" placeholder="e-mail" type="email" required>
-                                        <textarea class="message" name="Message" placeholder="type your message here" rows="10" required></textarea>
-                                        <button><input id="submit-button" type="submit" name="Submit" value="Submit"></button>
-                                </form>
-                        </div><!-- end contact window body -->
-                </div><!-- end window-container-->
-				
-        </div> <!--end desktop div-->
-		
-		<!-- CONTEXT MENU ----------------------------------------------------------->
-		
-		<ul class="context-menu" id="desktop-menu">
-				<li><div>set theme</div>
-						<ul>
-								<li><div onclick="setBackgroundBlue()">cozy night (default)</div></li>
-								<li><div onclick="setBackgroundBlack()">the big spooky (dark)</div></li>
-								<li><div onclick="setBackgroundLight()">arctic dawn (light)</div></li>
-						</ul>
-				</li>
-				<li><div><a href="https://github.com/frxedlxver/ePortfolio">view source</a></div></li>
-		</ul>
 
-        <script src="jquery-ui/jquery-ui.js"></script>
-        <script src="jquery-ui/jquery-3.6.1.min.js"></script>
-        <script src="jquery-ui/jquery-ui.min.js"></script>
-        <script src="js/windows.js"></script>
-        <script src="js/menu.js"></script>
+    <!-- CONTEXT MENU ----------------------------------------------------------->
+
+    <ul class="context-menu" id="desktop-menu">
+        <li>
+            <div>set theme</div>
+            <ul>
+                <li><div onclick="setBackgroundBlue()">cozy night (default)</div></li>
+                <li><div onclick="setBackgroundBlack()">the big spooky (dark)</div></li>
+                <li><div onclick="setBackgroundLight()">arctic dawn (light)</div></li>
+            </ul>
+        </li>
+        <li><div><a href="https://github.com/frxedlxver/ePortfolio">view source</a></div></li>
+    </ul>
+
+
+    <!-- JS ----------------------------------------------------------->
+    <script src="jquery-ui/jquery-3.6.1.min.js"></script>
+    <script src="jquery-ui/jquery-ui.min.js"></script>
+    <script src="js/windows.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 
 </html>

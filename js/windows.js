@@ -61,7 +61,3 @@ $("#btn-portfolio").click(function() {
 $(".btn-win-close").click(function() {
     $(this).parent().parent().hide()
 })
-
-$("#btn-ok").click(function() {
-    $(this).parent().parent().hide()
-})
