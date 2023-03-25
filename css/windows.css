@@ -185,13 +185,17 @@
         align-items: center;
         border-top-left-radius: 0.2em;
         border-top-right-radius: 0.2em;
-        background: #FFCF97;
         cursor: grab;
         display: flex;
         flex-flow: row;
+        background-color:#ffce97;
         justify-content: left;
         position: relative;
         box-shadow: inset 2px 4px 3px 1px rgba(255,255,255,0.5), 0px 1px 6px 0px rgba(0,0,0,0.2);
+    }
+
+    .background-window .window-header {
+         background-color: #F1F2DB;
     }
 
     /* holds window content */
