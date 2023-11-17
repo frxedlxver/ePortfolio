@@ -1,6 +1,3 @@
-
-
-
 // media query
 var mobile = window.matchMedia("(max-width: 768px)")
 
