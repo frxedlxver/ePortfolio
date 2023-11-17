@@ -247,7 +247,7 @@
     }
 
     /* styling for all buttons except portfolio links*/
-    .window-container button {
+    .btn-dialog, .btn-ok, .btn-x {
         background-color: #FFCF97;
         border-radius: 5px;
         border-top-color: #F3F4E1;
@@ -255,14 +255,12 @@
         border-bottom-color: #FF7868;
         border-right-color: #FF7868;
         min-height: fit-content;
-    }
-
-    .window-container button:hover {
-        background-color: #F8B5A2;
-    }
-
-    .window-container button:active {
-        animation: buttonClicked 0.1s linear 0s 1 forwards;
+        &:hover {
+            background-color: #F8B5A2;
+        }
+        &:active {
+            animation: buttonClicked 0.1s linear 0s 1 forwards;
+        }
     }
 
     /* contact page styling */
