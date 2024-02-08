@@ -8,8 +8,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		
         <link href="./jquery-ui/jquery-ui.min.css" rel="stylesheet">
-        
-
         <link href="./css/windows.css" rel = "stylesheet">
         <link href="./css/desktop.css" rel = "stylesheet">
         <link href="./css/portfolio.css" rel="stylesheet">                                                                                         
@@ -63,7 +61,7 @@
         <div id="win-welcome" class="window-container draggable-item">
 
             <div class="window-header">
-                <h4>w e l c o m e !</h4>
+                <h4>welcome</h4>
             </div>
 
             <div class="window-body">
@@ -81,55 +79,154 @@
         <div id="win-portfolio" class="window-container">
 
             <div class="window-header">
-                <h4>p o r t f o l i o</h4>
+                <h4>portfolio</h4>
                 <button class="btn-x btn-win-close"> X </button>
             </div>
 
-            <div class="window-body portfolio-content">
+            <div class="window-body-portfolio">
 
-                <button class="portfolio-item" >
-                    <img class="portfolio-thumbnail" src="./img/icon-git.png">
-                    <h4>Rogue Planet (coming soon...)</h4>
+                <button id="btn-duopus" class="btn-portfolio-item" data-portfolio-item="duopus">
+                    <h4>The Duopus (Unity)</h4>
+                    <img class="portfolio-thumbnail" src="./img/duopus-icon.png">
                 </button>
 
-                <a class="portfolio-item" href="https://github.com/frxedlxver/javagame" target="_blank">
-                    <img class="portfolio-thumbnail" src="img\icon-git.png">
-                    <h4>Text-based game-engine (Java)</h4>
-                </a>
                 <hr>
 
-
-                <a class="portfolio-item" href="https://github.com/frxedlxver/ePortfolio" target="_blank">
-                    <img class="portfolio-thumbnail" src="./img/icon-git.png">
-                    <h4>ePortfolio source</h4>
-                </a>
+                <button id= "btn-rogue-planet" class="btn-portfolio-item" data-portfolio-item="rogue-planet">
+                    <h4>Rogue Planet (Unity)</h4>
+                    <img class="portfolio-thumbnail" src="./img/rogue-planet-icon.png">
+                </button>
+                
                 <hr>
-
-                <a class="portfolio-item" href="https://github.com/frxedlxver/CalculatorApp" target="_blank">
-                    <img class="portfolio-thumbnail" src="./img/icon-git.png">
-                    <h4>Android Calculator App</h4>
-                </a>
-                <hr>
-
-
-                <a class="portfolio-item" href="https://github.com/frxedlxver/quiz-app" target="_blank">
-                    <img class="portfolio-thumbnail" src="./img/icon-git.png">
-                    <h4>Android Quiz App</h4>
-                </a>
+                
+                <button id= "btn-automatoy" class="btn-portfolio-item" data-portfolio-item="automatoy">
+                    <h4>Automatoy (python)</h4>
+                    <img class="portfolio-thumbnail" src="./img/automatoy-icon.png">
+                </button>
 
             </div>
         </div>
 
+        <!-- the duopus window -->
+
+        <div id="win-duopus" class="window-container">
+
+            <div class="window-header">
+                <h4>The Duopus</h4>
+                <button class="btn-x btn-win-close"> X </button>
+            </div>
+
+            <div id="win-duopus-body" class="window-body">
+                <p>
+                    <img class="portfolio-image" src="img/duopus-1.gif" style="float: inline-end"/>
+                    The Duopus is a physics-based platformer, developed in Unity, inspired by games like Getting Over It and QWOP. Born out of the 2024 Global Game Jam, I am continuing to work on this project in my spare time.
+                    <br>
+                    <br>
+                    Check back soon! I'll be adding more details here as development continues.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- rogue planet window -->
+
         <div id="win-rogue-planet" class="window-container">
 
+            <div class="window-header">
+                <h4>Rogue Planet</h4>
+                <button class="btn-x btn-win-close"> X </button>
+            </div>
+
+            <div id="win-rogue-planet-body"  class="window-body">
+                <div>
+                </div>
+                <div>
+                    <p>
+                    <img class="portfolio-image" src="img/rogue-planet-1.png" style="float: inline-end"/>
+                    <b>Rogue Planet</b>(<a href="https://github.com/gumgaard-dev/rogue-planet">see the source on github</a>), developed in Unity, is a game about a lonely interstellar miner who has crashed their ship on a strange planet. They must mine resources in the day, and defend their ship from the hostile local fauna by night.
+                        This project was developed by me and a team of three other programmers, and represents my first serious foray into gamedev. 
+                    </p>
+                    <br>
+                    <p>
+                        Our goal was to build a game similar to <a href="https://store.steampowered.com/app/1637320/Dome_Keeper/" target="_blank">Dome Keeper</a>, as we believed that having a solid reference point for design would allow us to focus more on learning the technical aspects of game development. 
+                        This turned out to be true, and I learned a great deal while working on this project. 
+                        However, it is also why development is now halted, given the team's general lack of interest in continuing to develop a game that is, conceptually, entirely unoriginal. 
+                        I've chosen to showcase it here regardless, as I believe it is a strong testament to my skills as a programmer and my ability and drive to self-learn new technologies and skills.
+                    </p>
+                    <br>
+
+                    <p>
+                        Working on Rogue Planet, I learned many of the fundamentals of game development and design, including the principles of Entity-Component architecture, the dangers of scope creep, managing version control on a project with multiple contributors, and the process of collaborative development.
+                        I also learned a number of technical skills by developing systems for this game. Of the components I am personally responsible for, the ones I am most proud of are:
+                    </p>
+                    <br>
+
+                    <ul>
+                        <li>dynamic and theoretically infinite procedural terrain generation</li>
+                        <li>terrain chunking, to load, save, unload, and create terrain at runtime with no effect on performance</li>
+                        <li>destructible terrain using a tilemap and custom tile subclass</li>
+                        <li>a flexible and reusable object pooling system, which we use for projectiles and enemies</li>
+                        <li>the front and back-end of a dynamic upgrade system</li>
+                        <li>the game's art (with the exception of the main character, who was created by my fiancé, Jenny)</li>
+                    </ul>
+                    <br>
+
+    
+                    <p>There is no publicly available executable for the game, though you can check out the source code on <a href="https://github.com/gumgaard-dev/rogue-planet">github</a>. I will update this page in the future with videos and more images, but until then, if you are familiar with Unity, you may clone the repository and build the game yourself if you are interested.</p>
+                </div>
+               
+            </div>
         </div>
+
+
+        <!-- cellular automata window -->
+
+        <div id="win-automatoy" class="window-container">
+
+            <div class="window-header">
+                <h4>Automatoy</h4>
+                <button class="btn-x btn-win-close"> X </button>
+            </div>
+
+            <div id="win-automatoy-body" class="window-body">
+                <p>
+                    <b>Automatoy</b>(<a href="https://github.com/gumgaard-dev/rogue-planet">see the source on github</a>)is a generative art application utilizing cellular automata to synthesize human creativity and algorithmic accidents, producing striking and unique images.
+                    <br>
+                    This project is written in python and uses pyglet as a graphics library. It uses numpy arrays and vectorisation to optimize performance, and sciPy's convolution algorithms to calculate neighbourhood population density.
+                    Python's limited performance means, unfortunately, that it is near impossible to get this app to do what I need it to do with the performance I am hoping to achieve. So, this app is serving as a prototype and I have started working on a revision of the program in C++.
+
+                    <br>
+
+                    If you'd like to play with the program, if you have the dependencies installed (pyglet, numpy, scipy, python 3.11), you can clone the repository above and run main.py.
+
+                    <br>
+                    <br>
+                    <h4>Screenshots:</h4>
+                   
+                    <div id="automatoy-images">
+                        <img class="portfolio-image-tall" src="img/automatoy-2.png"/>
+                        <img class="portfolio-image-tall" src="img/automatoy-3.png"/>
+                        <img class="portfolio-image-tall" src="img/automatoy-4.png"/>
+                        <img class="portfolio-image-tall" src="img/automatoy-5.png"/>
+                        <img class="portfolio-image-tall" src="img/automatoy-6.png"/>
+                        <img class="portfolio-image-tall" src="img/automatoy-7.png"/>
+                        <img class="portfolio-image-tall" src="img/automatoy-8.png"/>
+                        <img class="portfolio-image-tall" src="img/automatoy-1.png"/>
+                    </div>
+                </p>
+            </div>
+        </div>
+
+                
+
+
 
 
         <!-- contact -->
         <div id="win-contact" class="window-container">
 
             <div class="window-header">
-                <h4>c o n t a c t</h4>
+                <h4>contact</h4>
                 <button class="btn-x btn-win-close"> X </button>
             </div>
 

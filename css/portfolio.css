@@ -6,7 +6,7 @@
         width: 100%;
     }
 
-    .portfolio-item {
+    .btn-portfolio-item {
         background-color: rgba(255, 255, 255, 0.2);
         color: black;
         width: 100%;
@@ -16,26 +16,26 @@
         display: grid;
     }
     
-    .portfolio-item:hover {
+    .btn-portfolio-item:hover {
         background-color: #FFCF97;
     }
     
-    .portfolio-item:active {
+    .btn-portfolio-item:active {
         animation:  buttonPortfolioClicked 150ms ease-in-out 0s 2;
     }
     
-    .portfolio-item img {
+    .btn-portfolio-item img {
         height: 100px;
         grid-column: 1;
         grid-row: 1 / span 3;
     }
     
-    .portfolio-item h4 {
+    .btn-portfolio-item h4 {
         grid-column: 2 / span 6;
         grid-row: 2;
     }
     
-    .portfolio-item p {
+    .btn-portfolio-item p {
         grid-column: 2 / span 6;
         grid-row: 3;
     }
@@ -45,46 +45,68 @@
 
 @media only screen and (min-width: 768px) {
 
-    .portfolio-content{
+    .window-body-portfolio{
+
         margin: 1em;
         justify-content: center;
         align-items: center;
     }
+
+    .portfolio-image {
+        width: 40%;
+        border-radius: 10px;
+    }
+    .portfolio-image-tall {
+        width: 30%;
+        border-radius: 10px;
+    }
+
+    #automatoy-images {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
     
-    .portfolio-item {
+    .btn-portfolio-item {
         box-shadow: 2px 9px 4px 2px rgba(0,0,0,0.1), 0px 6px #FF7868;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
         background-color: rgb(237, 238, 227);
         color: black;
         padding:0;
         margin-right: 2px;
         margin-bottom: 5px;
         width: 100%;
-        display: grid;
+        height: 100px;
     }
     
-    .portfolio-item:hover {
+    .btn-portfolio-item:hover {
         background-color: #FFCF97;
     }
     
-    .portfolio-item:active {
+    .btn-portfolio-item:active {
         animation:  moveButton 0.1s ease-in-out 0s 1 forwards,
-                moveButtonShadow 0.1s ease-in-out 0s 1 forwards;
+        moveButtonShadow 0.1s ease-in-out 0s 1 forwards;
     }
     
-    .portfolio-item img {
-        height: 100px;
-        grid-column: 1;
-        grid-row: 1 / span 3;
+    .btn-portfolio-item img {
+        height: 100%;
+        align-self: flex-end;
     }
     
-    .portfolio-item h4 {
-        grid-column: 2 / span 6;
-        grid-row: 2;
-    }
-    
-    .portfolio-item p {
-        grid-column: 2 / span 6;
-        grid-row: 3;
+    .btn-portfolio-item h4 {
+        align-self: flex-start;
+        padding-left: 40px;
+        padding-top: 20px;
+        text-align: center;
+        justify-self: center;
+
     }
     
     /* animations */

@@ -20,6 +20,13 @@ function resetWindows() {
     }
 }
 
+function showWindow(window) {
+    resetWindows()
+    window.show()
+    window.removeClass("background-window")
+    window.addClass("selected-window")
+}
+
 // click listener for setting active window
 $(".window-container").mousedown(function(){
     if(!mobile.matches) {
@@ -53,8 +60,16 @@ $("#btn-portfolio").click(function() {
     $("#win-portfolio").addClass("selected-window")
 })
 
-// these use different ids to facilitate styling
-
 $(".btn-win-close").click(function() {
     $(this).parent().parent().hide()
 })
+
+$(".btn-portfolio-item").click(function() {
+    let projectName = $(this).data("portfolio-item")
+    console.log(projectName);
+    let targetWindow = $("#win-" + projectName)
+    console.log(targetWindow)
+    showWindow(targetWindow)
+
+})
+
